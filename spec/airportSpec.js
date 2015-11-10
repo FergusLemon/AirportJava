@@ -1,11 +1,14 @@
+'use strict';
+
 describe('Airport', function() {
 
-  var airport = new Airport(1);
-  var plane = new Plane();
+  var airport;
+  var plane;
 
-  // beforeEach(function(){
-  //   airport = new Airport(1);
-  // });
+  beforeEach(function(){
+    airport = new Airport(1);
+    plane = new Plane();
+  });
 
 
   describe('instructs a plane to', function() {
