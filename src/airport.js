@@ -2,10 +2,11 @@
 
 var Airport = function(capacity) {
   this.capacity = capacity;
-  this.planes = [];
 };
 
 var plane = "plane";
+
+Airport.prototype.planes = function() { return []; };
 
 Airport.prototype.land = function(plane){
   if (this.planes.length >= this.capacity) {
