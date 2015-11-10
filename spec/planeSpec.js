@@ -1,8 +1,11 @@
+'use strict';
+
 describe('Plane',function(){
+  var plane;
   beforeEach(function(){
     plane = new Plane();
   });
-  // describe('instructs a plane to',function (){
-  //   it('',function(){});
-  // });
+  it('can land at an airport', function() {
+    expect(plane.land).not.toBeUndefined()
+  });
 });
